@@ -1,0 +1,37 @@
+@import "_var.scss";
+
+
+.sidebarC { 
+    background-color: $sidebar-gray; 
+    color: white;
+    position:relative;
+}
+
+
+.sidebarC header { 
+    position:relative;
+    background-color: #690800;
+    height:110px; 
+    font-size:1.25rem;
+    margin:0 -15px;
+}
+
+.sidebarC header p { 
+    display:inline;
+    padding-left:10px;
+}
+
+
+.sNav { font-size:1.45rem; }
+.sNav ul { margin: 5px -15px 0; }
+.sNav ul li { margin-top:13px; padding:12px 0 12px 14%; }
+.sNav ul li:hover { background-color:#333; cursor:pointer; color:white; }
+.sNav i, .sNav span { margin-right:10px;}
+
+
+.imgText {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left:12%;
+}

@@ -1,0 +1,209 @@
+// sass --watch sass/main.scss:css/custom.css
+
+@import "sidebar.scss";
+@import "header.scss";
+@import "top-panel.scss";
+@import "bottom-panel.scss";
+@import "_var.scss";
+
+
+@charset "UTF-8";
+
+body { font-family: 'Lato', sans-serif; font-size:16px; background-color: $sidebar-gray; }
+
+
+.bodyC {
+  position:relative;
+  padding:0;
+  background-color: $body-white;
+  margin-right:-15px;
+}
+
+.yellowBoxNav {
+    position:relative;
+    display:inline-block;
+    /*float:right;*/
+    margin-right:30px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: $nav-yellow;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 55px;
+    height: 45px;
+    color:white;
+    z-index: 25;
+}
+
+
+
+.calendar, .trending, .sports { 
+    height:350px;
+    background-color: $calendar-bg;
+    color:white;
+    font-size: .8rem;
+}
+
+.box2, .box3 { padding-left:0; }
+
+
+
+.weeklySched {
+    position:relative;
+    left:40px;
+    color: $schedule-gray;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.weeklySched > ul { margin-bottom:0; }
+
+.lowerPanelNav { font-size:1.8rem; }
+
+.lowerPanelNav li { margin-right:60px; cursor:pointer; }
+.lowerPanelNav li:last-child { margin-right:0; }
+
+.bottomCalendar { position:relative; left:40px; }
+
+.dayBox { background-color: $daybox-bg; color: $daybox-color; width:90%; height:275px; }
+.dayMarker { font-size:6rem; font-weight:700; position:relative; top:-20px; }
+.dayBox i {  font-size:3rem; }
+.dayBox i:last-child { position:relative; top:-30px; }
+
+hr { border-color: $hr-color; }
+
+.calendarStuff hr { margin-top:0; }
+.courseInfo hr { max-width:185px; margin-left:0; }
+
+table { color: $table-color; }
+
+th {  padding-bottom:20px; font-size:1.5rem; color:#999; background-color:transparent; }
+td { font-size:1.45rem; padding:10px 0; }
+table th:first-child, table td:first-child { padding-left:30px ;}
+
+table tr:nth-child(2n+1) { background-color: $table-bg; }
+table tr:nth-child(2n+2) { background-color:$table-bg2; }
+td span { margin-left:12px; margin-right:6px; font-size:1.85rem; color: $hr-color; }
+td span:nth-child(1) { margin-right:0; }
+td span:nth-child(2) { margin-right:0; }
+td i { font-size:5rem; }
+
+.stretchCell { width:210px; }
+.wideCell { width:30% ;}
+.locked { color:red; }
+.viewed { color: $icon-viewed; }
+.notViewed { color:$icon-notviewed; }
+.fbActive { color: $icon-active; }
+
+.mainCfooter {
+    margin-top:200px;
+    padding-top:130px;
+    background-color: $footer;
+}
+
+footer h4 {margin:0;}
+footer { background-color: $footer-secondary; color:white; }
+
+.footerContent li {
+    /*display:inline-block;
+    margin-right:50px;*/
+    max-width:250px;
+}
+
+.footerContent h3 { 
+    font-family:"Lato";
+    font-weight:300;
+    font-size:2.25rem;
+}
+
+.iconHead { position:relative; left:-10px; }
+
+.childList { 
+    font-weight:300;
+    list-style-type:none; 
+    padding-left:20px;
+    font-size:12.5px;
+}
+
+.childList li { padding-top:10px; }
+
+.firstHeading { margin:0; }
+.firstHeader { margin-top:0; margin-bottom:10px; }
+
+.tempLink { text-decoration:underline; }
+.collapseLi { padding-top:5px;}
+
+.footerContent { position:relative; left:7.5%; padding:0; width:90%; }
+.footerStuff { padding-bottom:100px; }
+
+.discussionDrop { margin:10px 0; width:200px; padding-bottom:0; }
+
+#messageBadge {
+    position:relative; 
+    background-color:$message-badge;  
+    font-size:1rem; 
+    left:10px;
+    top:-2px; 
+    width:30; 
+    height:30;
+    text-align:center; 
+}
+
+.emptyCircle {
+    display:inline-block;
+    width:30px;
+    height:30px;
+    background-color: $circle-bg;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;  
+    margin-left:10px; 
+}
+
+
+.navIndicator { position:relative; height:8px; background-color: $nav-yellow; width:210px; }
+
+/* ---- prof portal styles ---*/
+
+.courseInfo > h3 > i { margin-right:10px; cursor:pointer; }
+
+.profTools { position:relative; }
+
+.profTools li { margin-right:6px; }
+
+.profTools p { 
+    display:inline; 
+    position:relative; 
+    font-size:1.5rem; 
+    top:-2px; 
+    padding-left: 8px; 
+}
+
+.profTools li:nth-child(3) { 
+    margin-right:0; 
+    padding-right:0; 
+}
+
+.profTools li:nth-child(3):after { 
+    content:"|"; 
+    position:relative; 
+    padding-left:15px; 
+    opacity:.8; 
+    top:-2px; 
+    cursor:default;
+}
+.profTools li:last-child { margin-left:3px; }
+
+.profToolsTop { left:40px; margin:20px 0; cursor:pointer; }
+
+.tCal { position:relative; left:40px; padding:0; /*background-color: #333;*/ }
+
+.calSnap { background-color: #c5c5c3; color:white; }
+
+.notice { background-color: #dfb6b2; color:white; }
+
+.genericNotice { background-color: #b8dac7; color:white; }
+
+.allNotices > div { height:170px; margin-bottom:15px; }
+

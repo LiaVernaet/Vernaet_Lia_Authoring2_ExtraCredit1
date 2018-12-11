@@ -1,0 +1,13 @@
+{
+    "name": "a2_week4_a",
+    "version": "1.0.0",
+    "description": "extra credit in-class project",
+    "main": "index.js",
+    "scipts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Trevor-FanshaweC/A2_Week4_A.git"
+
+    }

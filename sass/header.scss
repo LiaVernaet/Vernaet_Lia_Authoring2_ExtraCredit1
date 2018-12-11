@@ -1,0 +1,51 @@
+@import "_var.scss";
+
+.clLogo { 
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left:40px;
+}
+
+.mainHead {
+    height:110px;
+    background-color: #ffffff;
+}
+
+.yellowBoxNav span { position:relative; top: 8px; font-size:3rem; }
+
+.dropdown-menu { margin-top:25px; }
+.dropdown-menu-right { right:-15px; }
+
+
+/*attempting to style dropdowns*/
+.dropdown-menu { padding-top:0; }
+.dropdown-menu .circleI { 
+    width:30px; height:30px;
+     -moz-border-radius:50%; 
+     border-radius:50%; 
+     background-color:$circle-bg; 
+     color: $hr-color; 
+     text-align:center;
+     font-size:1.7rem;
+     margin:0 10px;
+     padding-top:5px;
+}
+.dropdown-menu li { position:relative; margin-right:0; /*padding:10px 0;*/}
+.dropdown-menu li:hover .emptyCircle {
+    background-color:#fff;
+}
+.dropdown-menu li:hover .circleI {
+    background-color:#fff;
+}
+
+
+.listText { position:absolute; top:7px; left:60px; font-size:1.5rem; line-height:1.5rem; }
+.listText span { color:red;font-size:1.5rem; }
+.topPanel { width:100%; height:50px; background-color:#383838; position:relative; }
+.topPanel i { position:absolute; top:-20px; left:80%; font-size:3rem; color:#383838; }
+.topPanel p { padding:15px 0 0 20px;  }
+
+.dropdown-menu .divider { margin:0; }
+
+.dropdown-menu > li > a { padding:10px 0; }
